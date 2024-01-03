@@ -22,17 +22,17 @@
     <main>
         <div class="geometry-container">
             <div class="geometric-toggle">
-                <h2 class="geometric-toggle-active">Triangle</h2>
-                <h2>Parallelogram</h2>
+                <h2 id="triangle" class="geometric-toggle-active" onclick="handleGeometry(true)">Triangle</h2>
+                <h2 id="parallelogram" onclick="handleGeometry(false)">Parallelogram</h2>
             </div>
 
-            <div class="triangle-container geometric-active">
+            <div id="triangle-container" class="geometric-active">
                 <h1>Triangle</h1>
                 <div class="formula-toggle">
-                    <h5 class="formula-toggle-active">Area</h5>
-                    <h5>Perimeter</h5>
+                    <h5 id="area" class="formula-toggle-active" onclick="handleStateFormula(true)">Area</h5>
+                    <h5 id="perimeter" onclick="handleStateFormula(false)">Perimeter</h5>
                 </div>
-                <div class="triangle-area-container formula-active">
+                <div id="triangle-area-container" class="formula-toggle-active">
                     <figure>
                         <img src="img/triangle-area.png" alt="Triangle Area">
                     </figure>
@@ -50,7 +50,7 @@
                         <button type="submit">Calculate</button>
                     </form>
                 </div>
-                <div class="triangle-perimeter-container">
+                <div id="triangle-perimeter-container" class="">
                     <figure>
                         <img src="img/triangle-area.png" alt="Triangle Perimeter">
                     </figure>
@@ -72,13 +72,13 @@
             </div>
 
             <!-- ----------------------- -->
-            <div class="parallelogram-container">
+            <div id="parallelogram-container">
                 <h1>Parallelogram</h1>
                 <div class="formula-toggle">
-                    <h5>Area</h5>
-                    <h5>Perimeter</h5>
+                    <h5 id="area-par" class="formula-toggle-active" onclick="handleStateFormula(true)">Area</h5>
+                    <h5 id="perimeter-par" onclick="handleStateFormula(false)">Perimeter</h5>
                 </div>
-                <div class="parallelogram-area-container">
+                <div id="parallelogram-area-container" class="formula-toggle-active">
                     <figure>
                         <img src="img/parallelogram-area.png" alt="parallelogram Area">
                     </figure>
@@ -98,7 +98,7 @@
                     </form>
                 </div>
 
-                <div class="parallelogram-Perimeter-container">
+                <div id="parallelogram-perimeter-container">
                     <figure>
                         <img src="img/parallelogram-area.png" alt="parallelogram Perimeter">
                     </figure>
@@ -119,6 +119,7 @@
             </div>
         </div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
