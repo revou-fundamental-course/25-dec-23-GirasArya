@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Katik!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Welcome to Katik</h1>
-        <h3>Katik is a simple geometric calculator webapp, you can calculate Area and Perimeter of triangle and parallelogram with ease.</h3>
+        <h3>Katik is a simple geometric calculator webapp, you can calculate Area and Perimeter of triangle and
+            parallelogram with ease.</h3>
         <h4>Sit back and enjoy using this app</h4>
     </header>
     <main>
         <div class="geometry-container">
             <div class="geometric-toggle">
-                <h2>Triangle</h2>
-                <h2>parallelogram</h2>
+                <h2 class="geometric-toggle-active">Triangle</h2>
+                <h2>Parallelogram</h2>
             </div>
-            <div class="triangle-container">
+
+            <div class="triangle-container geometric-active">
                 <h1>Triangle</h1>
                 <div class="formula-toggle">
-                    <h2>Area</h2>
-                    <h2>Perimeter</h2>
+                    <h5 class="formula-toggle-active">Area</h5>
+                    <h5>Perimeter</h5>
                 </div>
-                <div class="triangle-area-container">
+                <div class="triangle-area-container formula-active">
                     <figure>
                         <img src="img/triangle-area.png" alt="Triangle Area">
                     </figure>
@@ -43,7 +50,7 @@
                         <button type="submit">Calculate</button>
                     </form>
                 </div>
-                <div class="triangle-Perimeter-container">
+                <div class="triangle-perimeter-container">
                     <figure>
                         <img src="img/triangle-area.png" alt="Triangle Perimeter">
                     </figure>
@@ -68,8 +75,8 @@
             <div class="parallelogram-container">
                 <h1>Parallelogram</h1>
                 <div class="formula-toggle">
-                    <h2>Area</h2>
-                    <h2>Perimeter</h2>
+                    <h5>Area</h5>
+                    <h5>Perimeter</h5>
                 </div>
                 <div class="parallelogram-area-container">
                     <figure>
@@ -84,7 +91,8 @@
                     </div>
                     <form id="parallelogram-area">
                         <input min="0" type="number" name="base" required placeholder="Input Your parallelogram Base">
-                        <input min="0" type="number" name="height" required placeholder="Input Your parallelogram Height">
+                        <input min="0" type="number" name="height" required
+                            placeholder="Input Your parallelogram Height">
                         <br>
                         <button type="submit">Calculate</button>
                     </form>
@@ -101,7 +109,8 @@
                         <p> b = Base</p>
                     </div>
                     <form id="parallelogram-Perimeter">
-                        <input min="0" type="number" name="first-side" required placeholder="Input Your parallelogram Side">
+                        <input min="0" type="number" name="first-side" required
+                            placeholder="Input Your parallelogram Side">
                         <input min="0" type="number" name="base" required placeholder="Input Your parallelogram Base">
                         <br>
                         <button type="submit">Calculate</button>
@@ -111,4 +120,5 @@
         </div>
     </main>
 </body>
+
 </html>
