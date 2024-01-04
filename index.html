@@ -43,11 +43,17 @@
                         <p> b = Base</p>
                         <p> h = height</p>
                     </div>
+                    <div id="cal-result">
+                        <p id="tri-area-title"></p>
+                        <p id="tri-area-formula"></p>
+                        <p id="tri-res-area"></p>
+                    </div>
                     <form id="triangle-area">
-                        <input min="0" type="number" name="base" required placeholder="Input Your Triangle Base">
-                        <input min="0" type="number" name="height" required placeholder="Input Your Triangle Height">
+                        <input min="0" type="number" id="Tribase" required placeholder="Input Your Triangle Base">
+                        <input min="0" type="number" id="Triheight" required placeholder="Input Your Triangle Height">
                         <br>
-                        <button type="submit">Calculate</button>
+                        <button type="button" onclick="getTriangleArea()">Calculate</button>
+                        <button id="reset" type="button" onclick="setResetVal()">Reset</button>
                     </form>
                 </div>
                 <div id="triangle-perimeter-container" class="">
@@ -61,12 +67,18 @@
                         <p> b = Base</p>
                         <p> c = Side</p>
                     </div>
+                    <div id="cal-result">
+                        <p id="tri-par-title"></p>
+                        <p id="tri-par-formula"></p>
+                        <p id="tri-res-par"></p>
+                    </div>
                     <form id="triangle-Perimeter">
-                        <input min="0" type="number" name="first-side" required placeholder="Input Your First Side">
-                        <input min="0" type="number" name="base" required placeholder="Input Your Triangle Base">
-                        <input min="0" type="number" name="first-side" required placeholder="Input Your Second Side">
+                        <input min="0" type="number" id="first-side" required placeholder="Input Your First Side">
+                        <input min="0" type="number" id="base" required placeholder="Input Your Triangle Base">
+                        <input min="0" type="number" id="second-side" required placeholder="Input Your Second Side">
                         <br>
-                        <button type="submit">Calculate</button>
+                        <button type="button" onclick="getTrianglePerimeter()">Calculate</button>
+                        <button id="reset" type="button" onclick="setResetVal()">Reset</button>
                     </form>
                 </div>
             </div>
@@ -89,12 +101,18 @@
                         <p> b = Base</p>
                         <p> h = height</p>
                     </div>
+                    <div id="cal-result">
+                        <p id="paral-area-title"></p>
+                        <p id="paral-area-formula"></p>
+                        <p id="paral-res-area"></p>
+                    </div>
                     <form id="parallelogram-area">
-                        <input min="0" type="number" name="base" required placeholder="Input Your parallelogram Base">
-                        <input min="0" type="number" name="height" required
+                        <input min="0" type="number" id="baseParall" required placeholder="Input Your parallelogram Base">
+                        <input min="0" type="number" id="heightParall" required
                             placeholder="Input Your parallelogram Height">
                         <br>
-                        <button type="submit">Calculate</button>
+                        <button type="button" onclick="getParallelArea()">Calculate</button>
+                        <button id="reset" type="button" onclick="setResetVal()">Reset</button>
                     </form>
                 </div>
 
@@ -108,12 +126,19 @@
                         <p> a = Side</p>
                         <p> b = Base</p>
                     </div>
+                    <div id="cal-result">
+                        <p id="paral-par-title"></p>
+                        <p id="paral-par-formula"></p>
+                        <p id="paral-res-par"></p>
+                    </div>
                     <form id="parallelogram-Perimeter">
-                        <input min="0" type="number" name="first-side" required
+                        <input min="0" type="number" id="first-side-par" required
                             placeholder="Input Your parallelogram Side">
-                        <input min="0" type="number" name="base" required placeholder="Input Your parallelogram Base">
+                        <input min="0" type="number" id="base-par" required placeholder="Input Your parallelogram Base">
                         <br>
-                        <button type="submit">Calculate</button>
+                        <button type="button" onclick="getParallelPerimeter()">Calculate</button>
+                        <button id="reset" type="button" onclick="setResetVal()">Reset</button>
+                        <p id="par-res-perimeter"></p>
                     </form>
                 </div>
             </div>
